@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <title>SQL Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <ul class="nav justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="#"><h3>Home</h3></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="mailto:pavandeore90@gmail.com"><h3>Contact</h3></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="https://pavandeore.github.io"><h3>Portfolio</h3></a>
+        </li>
+    </ul>
+
+    <div class="alert alert-success text-center p-3" role="alert">
+        SQL Tutorial <small>get job ready!</small>
+    </div>
+
+    <div id="accordion">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                SQL Introduction
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                SQL is Structured Query Language, which is a programming language for storing, manipulating and retrieving data stored in a relational database. SQL is the standard language for Relational Database System. All the Relational Database Management Systems (RDMS) like MySQL, MS Access, Oracle, Sybase, Informix, Postgres and SQL Server use SQL as their standard database language.
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingTwo">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                SQL Process
+              </button>
+            </h5>
+          </div>
+          <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                When a SQL command is executed in any RDBMS, the system determines the best way to carry out your command and SQL engine figures out how to interpret the task.
+
+                Components like Query Dispatcher, Optimization Engines, Classic Query Engine, SQL Query Engine etc are involved in this process.
+                
+                Note: A classic query engine handles all the non-SQL queries, but a SQL query engine won't handle logical files. <br/><br/>
+                <img src="./dbms_process.png" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-header" id="headingThree">
+            <h5 class="mb-0">
+              <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                SQL Commands DDL - Data Definition Language
+              </button>
+            </h5>
+          </div>
+          <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                DDL is short name of Data Definition Language, which deals with database schemas and descriptions, of how the data should reside in the database.
+
+                <br/>CREATE - create a new table, view for a table or other object in the database
+                <br/>ALTER - modifies an existing database object, such as a table
+                <br/>DROP - deletes an entire table, a view of a table or other objects in the database
+                <br/>TRUNCATE - remove all records from a table, including all spaces allocated for the records are removed
+                <br/>COMMENT - add comments to the data dictionary
+                <br/>RENAME - rename an object
+            </div>
+          </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                    SQL Commands DML - Data Manipulation Language
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                DML is short name of Data Manipulation Language which deals with data manipulation and includes most common SQL statements such SELECT, INSERT, UPDATE, DELETE etc, and it is used to store, modify, retrieve, delete and update data in a database.
+
+               <br/>SELECT - retrieves records from one or more tables
+               <br/>INSERT - creates a record
+               <br/>UPDATE - modifies records
+               <br/>DELETE - deletes records
+               <br/>MERGE - UPSERT operation (insert or update)
+               <br/>CALL - call a PL/SQL or Java subprogram
+               <br/>EXPLAIN PLAN - interpretation of the data access path
+               <br/>LOCK TABLE - concurrency control
+              </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseThree">
+                   SQL Commands DCL & TCL 
+                </button>
+              </h5>
+            </div>
+            <div id="collapseFive" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                DCL is short name of Data Control Language which includes commands such as GRANT and mostly concerned with rights, permissions and other controls of the database system.
+
+                <br/>GRANT (Grant privilige(s) to user)
+                <br/>REVOKE (Remove granted privilige(s) from a user)
+                <br/><br/>
+                TCL is short name of Transaction Control Language which deals with a transaction within a database.
+
+                <br/>COMMIT - commits a transaction
+                <br/>ROLLBACK - rollback a transaction in case of any error occurs
+                <br/>SAVEPOINT - to rollback the transaction making points within groups
+                <br/>SET TRANSACTION - specify characteristics of the transaction
+              </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header" id="headingThree">
+              <h5 class="mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseThree">
+                   SQL Commands Example 
+                </button>
+              </h5>
+            </div>
+            <div id="collapseSix" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+              <div class="card-body">
+                ALTER TABLE:<br/>
+
+                ALTER TABLE lets you add columns to a table in a database.
+
+                ALTER TABLE table_name ADD column_name datatype;
+
+                <br/><br/>
+
+                AND<br/>
+
+                AND is an operator that combines two conditions. Both conditions must be true for the row to be included in the result set.
+
+                SELECT column_name(s) FROM table_name WHERE column_1 = value_1 AND column_2 = value_2;
+
+                <br/><br/>
+
+                AS<br/>
+
+                AS is a keyword in SQL that allows you to rename a column or table using an alias.
+
+                SELECT column_name AS 'Alias' FROM table_name;
+
+                <br/><br/>
+
+                AVG()<br/>
+
+                AVG() is an aggregate function that returns the average value for a numeric column.
+
+                SELECT AVG(column_name) FROM table_name;
+
+                <br/><br/>
+
+                BETWEEN<br/>
+
+                The BETWEEN operator is used to filter the result set within a certain range. The values can be numbers, text or dates.
+
+                SELECT column_name(s) FROM table_name WHERE column_name BETWEEN value_1 AND value_2;
+                <br/><br/>
+
+                ROUND()<br/>
+
+                ROUND() is a function that takes a column name and an integer as an argument. It rounds the values in the column to the number of decimal places specified by the integer.
+
+                SELECT ROUND(column_name, integer) FROM table_name;
+
+                <br/><br/>
+
+                INSERT<br/>
+
+                INSERT statements are used to add a new row to a table.
+
+                INSERT INTO table_name (column_1, column_2, column_3) VALUES (value_1, 'value_2', value_3);
+
+                <br/><br/>
+
+                SELECT<br/>
+
+                SELECT statements are used to fetch data from a database. Every query will begin with SELECT.
+
+                SELECT column_name FROM table_name;
+
+                <br/><br/>
+
+                SELECT DISTINCT<br/>
+
+                SELECT DISTINCT specifies that the statement is going to be a query that returns unique values in the specified column(s).
+
+                SELECT DISTINCT column_name FROM table_name;
+
+                <br/><br/>
+
+                SUM<br/>
+
+                SUM() is a function that takes the name of a column as an argument and returns the sum of all the values in that column.
+
+                SELECT SUM(column_name) FROM table_name;
+
+                <br/><br/>
+
+                UPDATE<br/>
+
+                UPDATE statements allow you to edit rows in a table.
+
+                UPDATE table_name SET some_column = some_value WHERE some_column = some_value;
+
+                <br/><br/>
+
+                WHERE<br/>
+
+                WHERE is a clause that indicates you want to filter the result set to include only rows where the following condition is true.
+
+                SELECT column_name(s) FROM table_name WHERE column_name operator value;
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  </body>
+</html>
